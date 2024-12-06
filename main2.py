@@ -12,6 +12,7 @@ BASE_URL = "https://insideairbnb.com/get-the-data/"
 OUTPUT_DIR = "downloads"
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
+
 load_dotenv()  
 AZURE_CONNECTION_STRING = os.getenv("AZURE_CONNECTION_STRING") 
 CONTAINER_NAME = os.getenv("CONTAINER_NAME")
