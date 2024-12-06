@@ -12,11 +12,9 @@ BASE_URL = "https://insideairbnb.com/get-the-data/"
 OUTPUT_DIR = "downloads"
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
-load_dotenv()
- # Azure Storage Account details   
+load_dotenv()  
 AZURE_CONNECTION_STRING = os.getenv("AZURE_CONNECTION_STRING") 
 CONTAINER_NAME = os.getenv("CONTAINER_NAME")
-# Azure Key Vault URL
 KEY_VAULT_URL = os.getenv("KEY_VAULT_URL")
 secret_secondaire = os.getenv("secret_secondaire")
 tenant_ID = os.getenv("tenant_ID")
